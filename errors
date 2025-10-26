@@ -1,0 +1,23 @@
+Starting build...
+cmd /c chcp 65001>nul && cl.exe /Zi /EHsc /nologo /FeC:\Users\Николай\Desktop\Robot-manipulator\main_new.exe C:\Users\Николай\Desktop\Robot-manipulator\main_new.cpp
+main_new.cpp
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall MovableLink::MovableLink(int,int,double,double,double,double)" (??0MovableLink@@QAE@HHNNNN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall MovableLink::setDirection(double,double,double)" (?setDirection@MovableLink@@QAEXNNN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall MovableLink::changeDirection(double,double,double)" (?changeDirection@MovableLink@@QAEXNNN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: virtual void __thiscall MovableLink::printInfo(void)const " (?printInfo@MovableLink@@UBEXXZ) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Gripper::Gripper(int,int,double,double,double,double,double)" (??0Gripper@@QAE@HHNNNNN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Camera::Camera(int,int,double,double,double,double,double)" (??0Camera@@QAE@HHNNNNN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Manipulator::~Manipulator(void)" (??1Manipulator@@QAE@XZ) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Manipulator::addLink(class MovableLink *)" (?addLink@Manipulator@@QAEXPAVMovableLink@@@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Manipulator::openGripper(int,double)" (?openGripper@Manipulator@@QAEXHN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Manipulator::closeGripper(int)" (?closeGripper@Manipulator@@QAEXH@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Manipulator::takePhoto(int)" (?takePhoto@Manipulator@@QAEXH@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: class std::tuple<double,double,double> __thiscall Manipulator::calculatePosition(int)const " (?calculatePosition@Manipulator@@QBE?AV?$tuple@NNN@std@@H@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Manipulator::printStructure(void)const " (?printStructure@Manipulator@@QBEXXZ) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall ElementaryMove::ElementaryMove(int,double,double,double)" (??0ElementaryMove@@QAE@HNNN@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Movement::addMove(class ElementaryMove const &)" (?addMove@Movement@@QAEXABVElementaryMove@@@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Movement::executeAll(class Manipulator &)" (?executeAll@Movement@@QAEXAAVManipulator@@@Z) в функции _main.
+main_new.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl runTests(void)" (?runTests@@YAXXZ) в функции _main.
+C:\Users\Николай\Desktop\Robot-manipulator\main_new.exe : fatal error LNK1120: неразрешенных внешних элементов: 17
+
+Build finished with error(s).
